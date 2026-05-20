@@ -63,7 +63,7 @@ public class PantallaInicio {
         // Título
         Label titulo = new Label("Bienvenido, Detective");
         titulo.setStyle(
-                "-fx-font-size: 32px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
+                "-fx-font-size: 38px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
         );
 
         Label subtitulo = new Label(
@@ -141,7 +141,7 @@ public class PantallaInicio {
         // Separador visual
         Label vs = new Label("×");
         vs.setStyle(
-                "-fx-font-size: 20px; -fx-text-fill: #2a2a3c; -fx-font-weight: 300;"
+                "-fx-font-size: 29px; -fx-text-fill: #2a2a3c; -fx-font-weight: 300;"
         );
         vs.setTranslateY(8);
 
@@ -177,7 +177,7 @@ public class PantallaInicio {
         } catch (Exception e) {
             Label inicial = new Label(nombre.substring(0, 1));
             inicial.setStyle(
-                    "-fx-font-size: 28px; -fx-font-weight: 600; " +
+                    "-fx-font-size: 34px; -fx-font-weight: 600; " +
                             "-fx-text-fill: " + color + ";"
             );
             avatarStack.getChildren().addAll(circulo, inicial);
@@ -185,7 +185,7 @@ public class PantallaInicio {
 
         Label nombreLabel = new Label(nombre);
         nombreLabel.setStyle(
-                "-fx-font-size: 12px; -fx-font-weight: 500; " +
+                "-fx-font-size: 17px; -fx-font-weight: 500; " +
                         "-fx-text-fill: " + color + "80;"
         );
 
@@ -201,7 +201,7 @@ public class PantallaInicio {
 
         Label quien = new Label("VALERIA DICE");
         quien.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #8080ff; -fx-letter-spacing: 0.1em;"
         );
 

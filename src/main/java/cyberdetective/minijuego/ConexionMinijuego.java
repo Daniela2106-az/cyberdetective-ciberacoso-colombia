@@ -231,7 +231,7 @@ public class ConexionMinijuego extends Minijuego {
 
             textLabel = new Label(text);
             textLabel.setWrapText(true);
-            textLabel.setStyle("-fx-text-fill: #e0e0e0; -fx-font-size: 13px;");
+            textLabel.setStyle("-fx-text-fill: #e0e0e0; -fx-font-size: 19px;");
             textLabel.setMaxWidth(isLeft ? 200 : 250);
 
             anchorPoint = new Rectangle(12, 12);
@@ -279,7 +279,7 @@ public class ConexionMinijuego extends Minijuego {
             isMatched = true;
             setStyle("-fx-background-color: #00ff8820; -fx-border-color: #00ff88; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10 15;");
             anchorPoint.setFill(Color.web("#00ff88"));
-            textLabel.setStyle("-fx-text-fill: #00ff88; -fx-font-size: 13px; -fx-font-weight: bold;");
+            textLabel.setStyle("-fx-text-fill: #00ff88; -fx-font-size: 19px; -fx-font-weight: bold;");
             setDisable(true);
         }
 

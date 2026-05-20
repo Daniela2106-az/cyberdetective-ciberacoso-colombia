@@ -140,7 +140,7 @@ public class VisualizadorArbol {
 
         Label idLabel = new Label("Caso #" + caso.getId());
         idLabel.setStyle(
-                "-fx-font-family: 'DM Mono'; -fx-font-size: 11px;" +
+                "-fx-font-family: 'DM Mono'; -fx-font-size: 19px;" +
                         "-fx-font-weight: 500; -fx-text-fill: #00d4ff;" +
                         "-fx-background-color: #00d4ff15;" +
                         "-fx-border-color: #00d4ff30; -fx-border-width: 1;" +
@@ -150,7 +150,7 @@ public class VisualizadorArbol {
 
         Label gravedadLabel = new Label("Gravedad: " + caso.getGravedad() + "/10");
         gravedadLabel.setStyle(
-                "-fx-font-size: 11px; -fx-text-fill: #3a3a5c;" +
+                "-fx-font-size: 19px; -fx-text-fill: #3a3a5c;" +
                         "-fx-font-family: 'DM Mono';"
         );
 
@@ -162,7 +162,7 @@ public class VisualizadorArbol {
         Label tipoLabel = new Label(caso.getTipoAcoso());
         tipoLabel.setWrapText(true);
         tipoLabel.setStyle(
-                "-fx-font-size: 14px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
+                "-fx-font-size: 17px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
         );
 
         // Separador visual
@@ -173,7 +173,7 @@ public class VisualizadorArbol {
         // Evidencias
         Label evEtiqueta = new Label("EVIDENCIAS");
         evEtiqueta.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
 
@@ -181,7 +181,7 @@ public class VisualizadorArbol {
         for (String ev : caso.getEvidencias()) {
             Label evLabel = new Label("◆  " + ev);
             evLabel.setWrapText(true);
-            evLabel.setStyle("-fx-font-size: 12px; -fx-text-fill: #8080a0;");
+            evLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #8080a0;");
             evBox.getChildren().add(evLabel);
         }
 
@@ -192,27 +192,27 @@ public class VisualizadorArbol {
 
         Label leyEtiqueta = new Label("MARCO LEGAL");
         leyEtiqueta.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
 
         Label leyLabel = new Label(caso.getLeyColombia());
         leyLabel.setWrapText(true);
         leyLabel.setStyle(
-                "-fx-font-size: 12px; -fx-font-weight: 500; -fx-text-fill: #00d4ff;"
+                "-fx-font-size: 17px; -fx-font-weight: 500; -fx-text-fill: #00d4ff;"
         );
 
         Label penaLabel = new Label("Pena: " + caso.getPenaAplicable());
         penaLabel.setWrapText(true);
-        penaLabel.setStyle("-fx-font-size: 11px; -fx-text-fill: #5a5a7a;");
+        penaLabel.setStyle("-fx-font-size: 19px; -fx-text-fill: #5a5a7a;");
 
         Label hinLabel = new Label("Clic fuera para cerrar");
         hinLabel.setStyle(
-                "-fx-font-size: 10px; -fx-text-fill: #2a2a3c; -fx-font-style: italic;"
+                "-fx-font-size: 17px; -fx-text-fill: #2a2a3c; -fx-font-style: italic;"
         );
 
         javafx.scene.control.Button btnEvidencia = new javafx.scene.control.Button("Ir a la evidencia →");
-        btnEvidencia.setStyle("-fx-background-color: #00d4ff20; -fx-text-fill: #00d4ff; -fx-font-size: 11px; -fx-font-weight: 700; -fx-padding: 6 12; -fx-cursor: hand; -fx-border-color: #00d4ff60; -fx-border-radius: 4; -fx-background-radius: 4;");
+        btnEvidencia.setStyle("-fx-background-color: #00d4ff20; -fx-text-fill: #00d4ff; -fx-font-size: 19px; -fx-font-weight: 700; -fx-padding: 6 12; -fx-cursor: hand; -fx-border-color: #00d4ff60; -fx-border-radius: 4; -fx-background-radius: 4;");
         btnEvidencia.setMaxWidth(Double.MAX_VALUE);
         btnEvidencia.setOnAction(e -> {
             if (popupNodo != null && popupNodo.isShowing()) popupNodo.hide();

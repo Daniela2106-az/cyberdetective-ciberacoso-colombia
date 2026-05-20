@@ -229,7 +229,7 @@ public class MapaInvestigacion implements JuegoController.JuegoListener {
                         } catch (Exception e) {
                                 Label fallback = new Label(String.valueOf(nivelNum));
                                 fallback.setStyle(
-                                                "-fx-font-size: 24px; -fx-font-weight: 700;" +
+                                                "-fx-font-size: 29px; -fx-font-weight: 700;" +
                                                                 "-fx-text-fill: " + (bloqueado ? "#3a3a5c" : "#00d4ff")
                                                                 + ";");
                                 fallback.setLayoutX(cx - 12);
@@ -248,7 +248,7 @@ public class MapaInvestigacion implements JuegoController.JuegoListener {
 
                                 Label checkLbl = new Label("✓");
                                 checkLbl.setStyle(
-                                                "-fx-font-size: 13px; -fx-font-weight: 700;" +
+                                                "-fx-font-size: 19px; -fx-font-weight: 700;" +
                                                                 "-fx-text-fill: #0a0a0f;");
                                 checkLbl.setLayoutX(cx + 34 - 7);
                                 checkLbl.setLayoutY(cy - 34 - 9);
@@ -259,7 +259,7 @@ public class MapaInvestigacion implements JuegoController.JuegoListener {
                         // Etiqueta título
                         Label titulo = new Label(TITULOS_NIVEL[i]);
                         titulo.setStyle(
-                                        "-fx-font-size: 14px; -fx-font-weight: 700;" +
+                                        "-fx-font-size: 17px; -fx-font-weight: 700;" +
                                                         "-fx-text-fill: "
                                                         + (bloqueado ? "#4a4a6a" : completado ? "#00ff88cc" : "#ffffff")
                                                         + ";" +
@@ -275,7 +275,7 @@ public class MapaInvestigacion implements JuegoController.JuegoListener {
                         // Etiqueta descripción
                         Label desc = new Label(DESCRIPCIONES[i]);
                         desc.setStyle(
-                                        "-fx-font-size: 11px;" +
+                                        "-fx-font-size: 19px;" +
                                                         "-fx-text-fill: " + (bloqueado ? "#3a3a5c" : "#a0a0c0") + ";" +
                                                         "-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.95),6,0,0,2);");
                         desc.setMaxWidth(140);
@@ -323,19 +323,19 @@ public class MapaInvestigacion implements JuegoController.JuegoListener {
 
                 Label appLabel = new Label("CYBERDETECTIVE");
                 appLabel.setStyle(
-                                "-fx-font-size: 11px; -fx-font-weight: 700;" +
+                                "-fx-font-size: 19px; -fx-font-weight: 700;" +
                                                 "-fx-text-fill: #00d4ff; -fx-letter-spacing: 0.15em;" +
                                                 "-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.9),8,0,0,2);");
 
                 Label nombreLabel = new Label("Det. " + controller.getNombreJugador());
                 nombreLabel.setStyle(
-                                "-fx-font-size: 20px; -fx-font-weight: 700; -fx-text-fill: #ffffff;" +
+                                "-fx-font-size: 29px; -fx-font-weight: 700; -fx-text-fill: #ffffff;" +
                                                 "-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.95),10,0,0,3);");
 
                 Label puntajeLabel = new Label(
                                 "Puntaje: " + controller.getPuntaje() + " pts");
                 puntajeLabel.setStyle(
-                                "-fx-font-size: 13px; -fx-text-fill: #00d4ff;" +
+                                "-fx-font-size: 19px; -fx-text-fill: #00d4ff;" +
                                                 "-fx-font-family: 'DM Mono';" +
                                                 "-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.9),8,0,0,2);");
 
@@ -344,7 +344,7 @@ public class MapaInvestigacion implements JuegoController.JuegoListener {
                                                 ? "✓  Investigación completada"
                                                 : "Selecciona el punto activo para continuar");
                 instruccion.setStyle(
-                                "-fx-font-size: 12px; -fx-text-fill: #808090;" +
+                                "-fx-font-size: 17px; -fx-text-fill: #808090;" +
                                                 "-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.9),8,0,0,2);");
 
                 // Barra de progreso global
@@ -375,7 +375,7 @@ public class MapaInvestigacion implements JuegoController.JuegoListener {
                                                 "-fx-border-radius: 8;" +
                                                 "-fx-background-radius: 8;" +
                                                 "-fx-text-fill: #9090b0;" +
-                                                "-fx-font-size: 13px;" +
+                                                "-fx-font-size: 19px;" +
                                                 "-fx-padding: 10 20 10 20;" +
                                                 "-fx-cursor: hand;");
                 btnMenu.setOnAction(e -> new MenuPrincipal(stage).mostrar());

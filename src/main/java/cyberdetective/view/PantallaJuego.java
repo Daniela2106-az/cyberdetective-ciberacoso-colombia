@@ -124,10 +124,10 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         Label alexLabel = new Label("Det. Alex");
         alexLabel.setStyle(
-                "-fx-font-size: 16px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
+                "-fx-font-size: 19px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
         );
         Label rolLabel = new Label("Especialista en crímenes digitales");
-        rolLabel.setStyle("-fx-font-size: 11px; -fx-text-fill: #3a3a5c;");
+        rolLabel.setStyle("-fx-font-size: 19px; -fx-text-fill: #3a3a5c;");
         VBox.setMargin(rolLabel, new Insets(2, 0, 0, 0));
 
         panel.getChildren().addAll(appLabel, avatarBox, alexLabel, rolLabel);
@@ -142,18 +142,18 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         
         VBox myScore = new VBox(2);
         Label myLabel = new Label("TÚ");
-        myLabel.setStyle("-fx-font-size: 10px; -fx-text-fill: #00d4ff; -fx-font-weight: bold;");
+        myLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #00d4ff; -fx-font-weight: bold;");
         labelPuntaje = new Label("0");
         labelPuntaje.getStyleClass().add("puntaje-label");
-        labelPuntaje.setStyle("-fx-font-size: 24px;");
+        labelPuntaje.setStyle("-fx-font-size: 29px;");
         myScore.getChildren().addAll(myLabel, labelPuntaje);
         
         VBox opponentScore = new VBox(2);
         Label opLabel = new Label("OPONENTE");
-        opLabel.setStyle("-fx-font-size: 10px; -fx-text-fill: #ff9f1c; -fx-font-weight: bold;");
+        opLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #ff9f1c; -fx-font-weight: bold;");
         labelPuntajeOponente = new Label("0");
         labelPuntajeOponente.getStyleClass().add("puntaje-label");
-        labelPuntajeOponente.setStyle("-fx-font-size: 24px; -fx-text-fill: #ff9f1c;");
+        labelPuntajeOponente.setStyle("-fx-font-size: 29px; -fx-text-fill: #ff9f1c;");
         opponentScore.getChildren().addAll(opLabel, labelPuntajeOponente);
         
         Separator sep = new Separator(javafx.geometry.Orientation.VERTICAL);
@@ -230,7 +230,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                         "-fx-control-inner-background: #0d0d16;" +
                         "-fx-text-fill: #5a5a7a;" +
                         "-fx-font-family: 'DM Mono';" +
-                        "-fx-font-size: 11px;" +
+                        "-fx-font-size: 19px;" +
                         "-fx-border-color: #1a1a28;" +
                         "-fx-border-width: 1;" +
                         "-fx-border-radius: 8;" +
@@ -323,7 +323,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         labelProgresoEvidencias = new Label("0 / 0 recolectadas");
         labelProgresoEvidencias.setStyle(
-                "-fx-font-size: 11px; -fx-text-fill: #3a3a5c;"
+                "-fx-font-size: 19px; -fx-text-fill: #3a3a5c;"
         );
 
         barraEvidencias = new ProgressBar(0);
@@ -338,7 +338,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         labelFaseActual = new Label("FASE: INVESTIGANDO");
         labelFaseActual.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #00d4ff; -fx-letter-spacing: 0.1em;"
         );
         VBox.setMargin(labelFaseActual, new Insets(20, 0, 12, 0));
@@ -396,7 +396,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                         "El árbol se auto-balancea con rotaciones AVL al insertar cada caso."
         );
         instruccion.setStyle(
-                "-fx-font-size: 12px; -fx-text-fill: #2a2a4a; -fx-wrap-text: true;"
+                "-fx-font-size: 17px; -fx-text-fill: #2a2a4a; -fx-wrap-text: true;"
         );
         instruccion.setWrapText(true);
 
@@ -468,7 +468,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         );
         instruccion.setWrapText(true);
         instruccion.setStyle(
-                "-fx-font-size: 14px; -fx-text-fill: #9090b0; -fx-line-spacing: 4;" +
+                "-fx-font-size: 17px; -fx-text-fill: #9090b0; -fx-line-spacing: 4;" +
                         "-fx-wrap-text: true;"
         );
 
@@ -515,13 +515,13 @@ public class PantallaJuego implements JuegoController.JuegoListener {
     private VBox tarjetaEvidencia(String evidencia, int numero) {
         Label numLabel = new Label(String.format("%02d", numero));
         numLabel.setStyle(
-                "-fx-font-family: 'DM Mono'; -fx-font-size: 11px;" +
+                "-fx-font-family: 'DM Mono'; -fx-font-size: 19px;" +
                         "-fx-font-weight: 500; -fx-text-fill: #00d4ff; -fx-min-width: 24px;"
         );
         Label evLabel = new Label(evidencia);
         evLabel.setWrapText(true);
         evLabel.setStyle(
-                "-fx-font-size: 13px; -fx-text-fill: #c0c0d8; -fx-line-spacing: 2;"
+                "-fx-font-size: 19px; -fx-text-fill: #c0c0d8; -fx-line-spacing: 2;"
         );
         HBox.setHgrow(evLabel, Priority.ALWAYS);
 
@@ -560,7 +560,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         );
         resumen.setWrapText(true);
         resumen.setStyle(
-                "-fx-font-size: 14px; -fx-text-fill: #9090b0; -fx-line-spacing: 4;" +
+                "-fx-font-size: 17px; -fx-text-fill: #9090b0; -fx-line-spacing: 4;" +
                         "-fx-wrap-text: true;"
         );
         panelFase.getChildren().add(resumen);
@@ -586,7 +586,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                 "PREGUNTA " + (idx + 1) + " DE " + preguntas.length
         );
         numPregunta.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
         VBox.setMargin(numPregunta, new Insets(16, 0, 0, 0));
@@ -594,7 +594,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         Label enunciado = new Label(pregunta[0]);
         enunciado.setWrapText(true);
         enunciado.setStyle(
-                "-fx-font-size: 15px; -fx-font-weight: 500;" +
+                "-fx-font-size: 18px; -fx-font-weight: 500;" +
                         "-fx-text-fill: #e0e0f0; -fx-line-spacing: 4;"
         );
         VBox.setMargin(enunciado, new Insets(8, 0, 12, 0));
@@ -654,21 +654,21 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         Label nodoEtq = new Label("NODO A INSERTAR EN EL ÁRBOL AVL");
         nodoEtq.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #00d4ff; -fx-letter-spacing: 0.1em;"
         );
 
         Label idLabel = new Label("Caso #" + caso.getId() + "  ·  " +
                 caso.getTipoAcoso());
         idLabel.setStyle(
-                "-fx-font-size: 15px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
+                "-fx-font-size: 18px; -fx-font-weight: 600; -fx-text-fill: #f0f0f8;"
         );
         idLabel.setWrapText(true);
 
         // Gravedad con barra de color
         Label gravEtq = new Label("GRAVEDAD DEL DELITO");
         gravEtq.setStyle(
-                "-fx-font-size: 10px; -fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
+                "-fx-font-size: 17px; -fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
         VBox.setMargin(gravEtq, new Insets(8, 0, 4, 0));
 
@@ -695,7 +695,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         // Evidencias
         Label evEtq = new Label("EVIDENCIAS RECOLECTADAS");
         evEtq.setStyle(
-                "-fx-font-size: 10px; -fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
+                "-fx-font-size: 17px; -fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
         VBox.setMargin(evEtq, new Insets(8, 0, 4, 0));
 
@@ -703,7 +703,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         for (String ev : caso.getEvidencias()) {
             Label evLabel = new Label("◆  " + ev);
             evLabel.setWrapText(true);
-            evLabel.setStyle("-fx-font-size: 12px; -fx-text-fill: #8080a0;");
+            evLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #8080a0;");
             evBox.getChildren().add(evLabel);
         }
 
@@ -715,18 +715,18 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         Label leyEtq = new Label("MARCO LEGAL");
         leyEtq.setStyle(
-                "-fx-font-size: 10px; -fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
+                "-fx-font-size: 17px; -fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
         Label leyLabel = new Label(caso.getLeyColombia());
         leyLabel.setWrapText(true);
         leyLabel.setStyle(
-                "-fx-font-size: 13px; -fx-font-weight: 500; -fx-text-fill: #00d4ff;"
+                "-fx-font-size: 19px; -fx-font-weight: 500; -fx-text-fill: #00d4ff;"
         );
         VBox.setMargin(leyLabel, new Insets(4, 0, 0, 0));
 
         Label penaLabel = new Label("Pena: " + caso.getPenaAplicable());
         penaLabel.setWrapText(true);
-        penaLabel.setStyle("-fx-font-size: 12px; -fx-text-fill: #5a5a7a;");
+        penaLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #5a5a7a;");
         VBox.setMargin(penaLabel, new Insets(4, 0, 0, 0));
 
         tarjetaNodo.getChildren().addAll(
@@ -868,7 +868,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         );
         Label misionEtq = new Label("ALEX DICE");
         misionEtq.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #00d4ff; -fx-letter-spacing: 0.1em;"
         );
         Label misionTexto = new Label(
@@ -878,14 +878,14 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         );
         misionTexto.setWrapText(true);
         misionTexto.setStyle(
-                "-fx-font-size: 13px; -fx-font-style: italic; -fx-text-fill: #00d4ffcc;"
+                "-fx-font-size: 19px; -fx-font-style: italic; -fx-text-fill: #00d4ffcc;"
         );
         cajaMision.getChildren().addAll(misionEtq, misionTexto);
 
         // Línea de progreso del recorrido
         Label progresoEtq = new Label("RECORRIDO INORDEN — PROGRESO");
         progresoEtq.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
 
@@ -903,14 +903,14 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         feedbackLabel.setWrapText(true);
         feedbackLabel.setId("feedbackLabel");
         feedbackLabel.setStyle(
-                "-fx-font-size: 14px; -fx-text-fill: #9090b0; -fx-line-spacing: 4;" +
+                "-fx-font-size: 17px; -fx-text-fill: #9090b0; -fx-line-spacing: 4;" +
                         "-fx-wrap-text: true;"
         );
 
         // Nodos desordenados para que el jugador elija
         Label seleccionEtq = new Label("CASOS DISPONIBLES — HAZ CLIC EN EL ORDEN CORRECTO");
         seleccionEtq.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
 
@@ -957,11 +957,11 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         Label numLabel = new Label(String.valueOf(posicion + 1));
         numLabel.setStyle(
-                "-fx-font-family: 'DM Mono'; -fx-font-size: 10px; -fx-text-fill: #2a2a3c;"
+                "-fx-font-family: 'DM Mono'; -fx-font-size: 17px; -fx-text-fill: #2a2a3c;"
         );
 
         Label vaciLabel = new Label("— pendiente —");
-        vaciLabel.setStyle("-fx-font-size: 11px; -fx-text-fill: #2a2a3c;");
+        vaciLabel.setStyle("-fx-font-size: 19px; -fx-text-fill: #2a2a3c;");
 
         slot.getChildren().addAll(numLabel, vaciLabel);
         slot.setId("slot_" + posicion);
@@ -988,22 +988,22 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         Label idLabel = new Label("Caso #" + caso.getId());
         idLabel.setStyle(
-                "-fx-font-family: 'DM Mono'; -fx-font-size: 11px; -fx-text-fill: #3a3a5c;"
+                "-fx-font-family: 'DM Mono'; -fx-font-size: 19px; -fx-text-fill: #3a3a5c;"
         );
         Label tipoLabel = new Label(caso.getTipoAcoso());
         tipoLabel.setStyle(
-                "-fx-font-size: 13px; -fx-font-weight: 600; -fx-text-fill: #e0e0f0;"
+                "-fx-font-size: 19px; -fx-font-weight: 600; -fx-text-fill: #e0e0f0;"
         );
         Region spacer = new Region();
         HBox.setHgrow(spacer, Priority.ALWAYS);
         Label gravLabel = new Label("Gravedad: " + caso.getGravedad() + "/10");
         gravLabel.setStyle(
-                "-fx-font-family: 'DM Mono'; -fx-font-size: 11px; -fx-text-fill: #4a4a6a;"
+                "-fx-font-family: 'DM Mono'; -fx-font-size: 19px; -fx-text-fill: #4a4a6a;"
         );
         cabecera.getChildren().addAll(idLabel, tipoLabel, spacer, gravLabel);
 
         Label leyLabel = new Label(caso.getLeyColombia());
-        leyLabel.setStyle("-fx-font-size: 12px; -fx-text-fill: #00d4ffaa;");
+        leyLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #00d4ffaa;");
 
         tarjeta.getChildren().addAll(cabecera, leyLabel);
 
@@ -1068,19 +1068,19 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                 );
                 Label casoLabel = new Label("C" + casoElegido.getId());
                 casoLabel.setStyle(
-                        "-fx-font-family: 'DM Mono'; -fx-font-size: 12px;" +
+                        "-fx-font-family: 'DM Mono'; -fx-font-size: 17px;" +
                                 "-fx-font-weight: 600; -fx-text-fill: #00ff88;"
                 );
                 Label gravSlot = new Label("G:" + casoElegido.getGravedad());
                 gravSlot.setStyle(
-                        "-fx-font-family: 'DM Mono'; -fx-font-size: 10px; -fx-text-fill: #00ff8888;"
+                        "-fx-font-family: 'DM Mono'; -fx-font-size: 17px; -fx-text-fill: #00ff8888;"
                 );
                 slot.getChildren().addAll(casoLabel, gravSlot);
                 animarEntrada(slot);
             }
 
             feedbackLabel.setStyle(
-                    "-fx-font-size: 13px; -fx-text-fill: #00ff88; -fx-line-spacing: 2;"
+                    "-fx-font-size: 19px; -fx-text-fill: #00ff88; -fx-line-spacing: 2;"
             );
 
             siguienteCorrecto++;
@@ -1107,7 +1107,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
             // Incorrecto
             intentosFallidos++;
             feedbackLabel.setStyle(
-                    "-fx-font-size: 13px; -fx-text-fill: #ff4466; -fx-line-spacing: 2;"
+                    "-fx-font-size: 19px; -fx-text-fill: #ff4466; -fx-line-spacing: 2;"
             );
             feedbackLabel.setText(
                     "✗ Ese delito tiene gravedad " + casoElegido.getGravedad() +
@@ -1170,7 +1170,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
         );
         Label evEtq = new Label("EVIDENCIAS CLAVE DEL ÁRBOL");
         evEtq.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
         resumenEvidencias.getChildren().add(evEtq);
@@ -1179,14 +1179,14 @@ public class PantallaJuego implements JuegoController.JuegoListener {
             String ev = c.getEvidencias()[0];
             Label evLabel = new Label("◆  [Caso #" + c.getId() + "] " + ev);
             evLabel.setWrapText(true);
-            evLabel.setStyle("-fx-font-size: 12px; -fx-text-fill: #6060808;");
+            evLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #6060808;");
             resumenEvidencias.getChildren().add(evLabel);
         }
 
         // Sospechosos — uno de ellos es el correcto
         Label sospEtq = new Label("SELECCIONA AL AGRESOR");
         sospEtq.setStyle(
-                "-fx-font-size: 10px; -fx-font-weight: 600;" +
+                "-fx-font-size: 17px; -fx-font-weight: 600;" +
                         "-fx-text-fill: #3a3a5c; -fx-letter-spacing: 0.1em;"
         );
         VBox.setMargin(sospEtq, new Insets(8, 0, 0, 0));
@@ -1291,7 +1291,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                         "-fx-control-inner-background: #0d0d16;" +
                         "-fx-text-fill: #9090b0;" +
                         "-fx-font-family: 'DM Mono';" +
-                        "-fx-font-size: 12px;" +
+                        "-fx-font-size: 17px;" +
                         "-fx-border-color: #1e1e2e;" +
                         "-fx-border-width: 1;" +
                         "-fx-border-radius: 10;" +
@@ -1334,13 +1334,13 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         Label ordenLabel = new Label("#" + orden);
         ordenLabel.setStyle(
-                "-fx-font-family: 'DM Mono'; -fx-font-size: 11px;" +
+                "-fx-font-family: 'DM Mono'; -fx-font-size: 19px;" +
                         "-fx-text-fill: #3a3a5c;"
         );
 
         Label tipoLabel = new Label(c.getTipoAcoso());
         tipoLabel.setStyle(
-                "-fx-font-size: 13px; -fx-font-weight: 600; -fx-text-fill: #e0e0f0;"
+                "-fx-font-size: 19px; -fx-font-weight: 600; -fx-text-fill: #e0e0f0;"
         );
 
         Region spacer = new Region();
@@ -1348,17 +1348,17 @@ public class PantallaJuego implements JuegoController.JuegoListener {
 
         Label gravLabel = new Label("Gravedad " + c.getGravedad() + "/10");
         gravLabel.setStyle(
-                "-fx-font-family: 'DM Mono'; -fx-font-size: 11px; -fx-text-fill: #00d4ff;"
+                "-fx-font-family: 'DM Mono'; -fx-font-size: 19px; -fx-text-fill: #00d4ff;"
         );
 
         cabecera.getChildren().addAll(ordenLabel, tipoLabel, spacer, gravLabel);
 
         Label leyLabel = new Label(c.getLeyColombia());
-        leyLabel.setStyle("-fx-font-size: 12px; -fx-text-fill: #00d4ff88;");
+        leyLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #00d4ff88;");
 
         Label penaLabel = new Label("Pena: " + c.getPenaAplicable());
         penaLabel.setWrapText(true);
-        penaLabel.setStyle("-fx-font-size: 12px; -fx-text-fill: #8080a0;");
+        penaLabel.setStyle("-fx-font-size: 17px; -fx-text-fill: #8080a0;");
 
         tarjeta.getChildren().addAll(cabecera, leyLabel, penaLabel);
         return tarjeta;
@@ -1377,7 +1377,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                         "-fx-control-inner-background: #0d0d16;" +
                         "-fx-text-fill: #9090b0;" +
                         "-fx-font-family: 'DM Mono';" +
-                        "-fx-font-size: 12px;" +
+                        "-fx-font-size: 17px;" +
                         "-fx-border-color: #1e1e2e;" +
                         "-fx-border-width: 1;" +
                         "-fx-border-radius: 10;" +
@@ -1500,7 +1500,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                     }
                 }
                 Label aviso = new Label("¡EL DETECTIVE " + oponente.toUpperCase() + " SE ADELANTÓ!");
-                aviso.setStyle("-fx-text-fill: #ff6b6b; -fx-font-weight: bold; -fx-font-size: 14px;");
+                aviso.setStyle("-fx-text-fill: #ff6b6b; -fx-font-weight: bold; -fx-font-size: 17px;");
                 panelFase.getChildren().add(aviso);
                 
                 // Esperar un momento y pasar a la siguiente
@@ -1524,12 +1524,12 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                         }
                     }
                     Label aviso = new Label("¡Respuesta incorrecta! Esperando al otro detective...");
-                    aviso.setStyle("-fx-text-fill: #ff6b6b; -fx-font-weight: bold; -fx-font-size: 14px;");
+                    aviso.setStyle("-fx-text-fill: #ff6b6b; -fx-font-weight: bold; -fx-font-size: 17px;");
                     panelFase.getChildren().add(aviso);
                 } else {
                     // El otro falló, avisamos
                     Label aviso = new Label("¡EL DETECTIVE " + jugador.toUpperCase() + " FALLÓ! TE TOCA.");
-                    aviso.setStyle("-fx-text-fill: #ff9f1c; -fx-font-weight: bold; -fx-font-size: 12px;");
+                    aviso.setStyle("-fx-text-fill: #ff9f1c; -fx-font-weight: bold; -fx-font-size: 17px;");
                     panelFase.getChildren().add(aviso);
                 }
             }
@@ -1551,7 +1551,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                     }
                 }
                 Label aviso = new Label("¡AMBOS FALLARON! LA RESPUESTA ERA LA RESALTADA.");
-                aviso.setStyle("-fx-text-fill: #ff4444; -fx-font-weight: bold; -fx-font-size: 14px;");
+                aviso.setStyle("-fx-text-fill: #ff4444; -fx-font-weight: bold; -fx-font-size: 17px;");
                 panelFase.getChildren().add(aviso);
                 
                 PauseTransition pausa = new PauseTransition(Duration.millis(3000));
@@ -1591,7 +1591,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                 "-fx-border-radius: 8;" +
                 "-fx-background-radius: 8;" +
                 "-fx-text-fill: #00d4ff;" +
-                "-fx-font-size: 13px;" +
+                "-fx-font-size: 19px;" +
                 "-fx-padding: 10 16 10 16;" +
                 "-fx-cursor: hand;";
     }
@@ -1603,7 +1603,7 @@ public class PantallaJuego implements JuegoController.JuegoListener {
                 "-fx-border-radius: 8;" +
                 "-fx-background-radius: 8;" +
                 "-fx-text-fill: #4a4a6a;" +
-                "-fx-font-size: 13px;" +
+                "-fx-font-size: 19px;" +
                 "-fx-padding: 10 16 10 16;" +
                 "-fx-cursor: hand;";
     }

@@ -30,7 +30,7 @@ public class PanelEvidencias extends VBox {
         // Cabecera del caso
         Label tipoCasoLabel = new Label(caso.getTipoAcoso().toUpperCase());
         tipoCasoLabel.setStyle(
-                "-fx-font-size: 10px;" +
+                "-fx-font-size: 17px;" +
                         "-fx-font-weight: 600;" +
                         "-fx-text-fill: #00d4ff;" +
                         "-fx-letter-spacing: 0.12em;"
@@ -39,7 +39,7 @@ public class PanelEvidencias extends VBox {
         Label descripcionLabel = new Label(caso.getDescripcion());
         descripcionLabel.setWrapText(true);
         descripcionLabel.setStyle(
-                "-fx-font-size: 13px;" +
+                "-fx-font-size: 19px;" +
                         "-fx-text-fill: #9090b0;" +
                         "-fx-line-spacing: 3;"
         );
@@ -59,7 +59,7 @@ public class PanelEvidencias extends VBox {
         // Sección de evidencias
         Label secEvidencias = new Label("EVIDENCIAS");
         secEvidencias.setStyle(
-                "-fx-font-size: 10px;" +
+                "-fx-font-size: 17px;" +
                         "-fx-font-weight: 500;" +
                         "-fx-text-fill: #3a3a5c;" +
                         "-fx-letter-spacing: 0.12em;"
@@ -77,7 +77,7 @@ public class PanelEvidencias extends VBox {
         // Sección legal
         Label secLegal = new Label("MARCO LEGAL");
         secLegal.setStyle(
-                "-fx-font-size: 10px;" +
+                "-fx-font-size: 17px;" +
                         "-fx-font-weight: 500;" +
                         "-fx-text-fill: #3a3a5c;" +
                         "-fx-letter-spacing: 0.12em;"
@@ -96,7 +96,7 @@ public class PanelEvidencias extends VBox {
         Label numLabel = new Label(String.format("%02d", numero));
         numLabel.setStyle(
                 "-fx-font-family: 'DM Mono';" +
-                        "-fx-font-size: 11px;" +
+                        "-fx-font-size: 19px;" +
                         "-fx-font-weight: 500;" +
                         "-fx-text-fill: #00d4ff;" +
                         "-fx-min-width: 24px;"
@@ -105,7 +105,7 @@ public class PanelEvidencias extends VBox {
         Label evLabel = new Label(evidencia);
         evLabel.setWrapText(true);
         evLabel.setStyle(
-                "-fx-font-size: 12px;" +
+                "-fx-font-size: 17px;" +
                         "-fx-text-fill: #c0c0d8;" +
                         "-fx-line-spacing: 2;"
         );
@@ -153,7 +153,7 @@ public class PanelEvidencias extends VBox {
         Label leyLabel = new Label(caso.getLeyColombia());
         leyLabel.setStyle(
                 "-fx-font-family: 'DM Mono';" +
-                        "-fx-font-size: 12px;" +
+                        "-fx-font-size: 17px;" +
                         "-fx-font-weight: 500;" +
                         "-fx-text-fill: #00d4ff;" +
                         "-fx-wrap-text: true;"
@@ -163,7 +163,7 @@ public class PanelEvidencias extends VBox {
         Label penaLabel = new Label("Pena: " + caso.getPenaAplicable());
         penaLabel.setWrapText(true);
         penaLabel.setStyle(
-                "-fx-font-size: 12px;" +
+                "-fx-font-size: 17px;" +
                         "-fx-text-fill: #6b6b8a;" +
                         "-fx-line-spacing: 2;" +
                         "-fx-wrap-text: true;"
@@ -189,7 +189,7 @@ public class PanelEvidencias extends VBox {
     private VBox construirBarraGravedad(int gravedad) {
         Label label = new Label("GRAVEDAD DEL DELITO");
         label.setStyle(
-                "-fx-font-size: 10px;" +
+                "-fx-font-size: 17px;" +
                         "-fx-font-weight: 500;" +
                         "-fx-text-fill: #3a3a5c;" +
                         "-fx-letter-spacing: 0.12em;"
@@ -220,7 +220,7 @@ public class PanelEvidencias extends VBox {
         Label valorLabel = new Label(gravedad + " / 10");
         valorLabel.setStyle(
                 "-fx-font-family: 'DM Mono';" +
-                        "-fx-font-size: 11px;" +
+                        "-fx-font-size: 19px;" +
                         "-fx-text-fill: #6b6b8a;"
         );
 

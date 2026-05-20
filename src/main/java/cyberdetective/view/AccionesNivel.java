@@ -168,16 +168,16 @@ public class AccionesNivel implements JuegoController.JuegoListener {
         // Tú
         VBox myBox = new VBox(2);
         Label myTitle = new Label("TÚ");
-        myTitle.setStyle("-fx-font-size: 9px; -fx-text-fill: #00d4ff; -fx-font-weight: bold;");
+        myTitle.setStyle("-fx-font-size: 11px; -fx-text-fill: #00d4ff; -fx-font-weight: bold;");
         labelPuntaje = new Label(String.valueOf(controller.getPuntaje()));
         labelPuntaje.getStyleClass().add("puntaje-label");
-        labelPuntaje.setStyle("-fx-font-size: 20px;");
+        labelPuntaje.setStyle("-fx-font-size: 29px;");
         myBox.getChildren().addAll(myTitle, labelPuntaje);
         
         // Oponente
         VBox opBox = new VBox(2);
         Label opTitle = new Label("OPONENTE");
-        opTitle.setStyle("-fx-font-size: 9px; -fx-text-fill: #ff9f1c; -fx-font-weight: bold;");
+        opTitle.setStyle("-fx-font-size: 11px; -fx-text-fill: #ff9f1c; -fx-font-weight: bold;");
         
         int puntosOp = 0;
         if (controller instanceof cyberdetective.controller.MultiplayerJuegoController mc) {
@@ -186,7 +186,7 @@ public class AccionesNivel implements JuegoController.JuegoListener {
         
         labelPuntajeOponente = new Label(String.valueOf(puntosOp));
         labelPuntajeOponente.getStyleClass().add("puntaje-label");
-        labelPuntajeOponente.setStyle("-fx-font-size: 20px; -fx-text-fill: #ff9f1c;");
+        labelPuntajeOponente.setStyle("-fx-font-size: 29px; -fx-text-fill: #ff9f1c;");
         opBox.getChildren().addAll(opTitle, labelPuntajeOponente);
         
         Separator sep = new Separator(javafx.geometry.Orientation.VERTICAL);
@@ -443,7 +443,7 @@ public class AccionesNivel implements JuegoController.JuegoListener {
         }
         
         Label lblClick = new Label("Haz clic para ver evidencia técnica");
-        lblClick.setStyle("-fx-font-size: 11px; -fx-text-fill: #00d4ff90; -fx-font-weight: 600;");
+        lblClick.setStyle("-fx-font-size: 19px; -fx-text-fill: #00d4ff90; -fx-font-weight: 600;");
         ficha.getChildren().add(lblClick);
         
         ficha.setStyle("-fx-background-color:#0f0f1a;-fx-border-color:" + (cerrado ? "#00d4ff30" : "#2a2a3c") + ";-fx-border-width:1;-fx-border-radius:10;-fx-background-radius:10;-fx-padding:16 20 16 20;-fx-cursor: hand;");
@@ -485,7 +485,7 @@ public class AccionesNivel implements JuegoController.JuegoListener {
         }
 
         Button btnCerrar = new Button("✕");
-        btnCerrar.setStyle("-fx-background-color: transparent; -fx-text-fill: #ff4466; -fx-font-size: 22px; -fx-cursor: hand; -fx-padding: 0;");
+        btnCerrar.setStyle("-fx-background-color: transparent; -fx-text-fill: #ff4466; -fx-font-size: 26px; -fx-cursor: hand; -fx-padding: 0;");
         btnCerrar.setOnAction(e -> stackCentral.getChildren().remove(overlayBg));
 
         HBox topBar = new HBox(btnCerrar);
@@ -1073,7 +1073,7 @@ public class AccionesNivel implements JuegoController.JuegoListener {
                             "-fx-border-width: 2; -fx-border-radius: 12; -fx-background-radius: 12;");
             
             Label lbl = new Label("OBJETIVO COMPLETADO POR TU COMPAÑERO");
-            lbl.setStyle("-fx-text-fill: #00d4ff; -fx-font-family: 'DM Mono'; -fx-font-size: 10px; -fx-font-weight: bold;");
+            lbl.setStyle("-fx-text-fill: #00d4ff; -fx-font-family: 'DM Mono'; -fx-font-size: 17px; -fx-font-weight: bold;");
             
             HBox box = new HBox(8, new Label("👤"), lbl);
             box.setAlignment(Pos.CENTER_LEFT);
@@ -1086,7 +1086,7 @@ public class AccionesNivel implements JuegoController.JuegoListener {
                             "-fx-border-width: 2; -fx-border-radius: 12; -fx-background-radius: 12;");
             
             Label lbl = new Label("NINGUNO RESPONDIÓ CORRECTAMENTE");
-            lbl.setStyle("-fx-text-fill: #ff4466; -fx-font-family: 'DM Mono'; -fx-font-size: 10px; -fx-font-weight: bold;");
+            lbl.setStyle("-fx-text-fill: #ff4466; -fx-font-family: 'DM Mono'; -fx-font-size: 17px; -fx-font-weight: bold;");
             
             HBox box = new HBox(8, new Label("✗"), lbl);
             box.setAlignment(Pos.CENTER_LEFT);
@@ -1151,7 +1151,7 @@ public class AccionesNivel implements JuegoController.JuegoListener {
         tarjeta.getChildren().forEach(n -> n.setDisable(true));
 
         Label lbl = new Label("OBJETIVO COMPLETADO POR TU COMPAÑERO");
-        lbl.setStyle("-fx-text-fill: #00d4ff; -fx-font-family: 'DM Mono'; -fx-font-size: 10px; -fx-font-weight: bold;");
+        lbl.setStyle("-fx-text-fill: #00d4ff; -fx-font-family: 'DM Mono'; -fx-font-size: 17px; -fx-font-weight: bold;");
         
         HBox box = new HBox(8, new Label("👤"), lbl);
         box.setAlignment(Pos.CENTER_LEFT);
@@ -2051,7 +2051,7 @@ public class AccionesNivel implements JuegoController.JuegoListener {
             // Pistas temporales (usamos la primera evidencia que suele tener la fecha)
             Label d = new Label(c.getEvidencias()[0]);
             d.setWrapText(true);
-            d.setStyle("-fx-text-fill: #00ff8880; -fx-font-size: 11px;");
+            d.setStyle("-fx-text-fill: #00ff8880; -fx-font-size: 19px;");
 
             info.getChildren().addAll(t, d);
             h.getChildren().addAll(num, info);
@@ -2064,12 +2064,12 @@ public class AccionesNivel implements JuegoController.JuegoListener {
             tarjetaEvidencia.setStyle("-fx-background-color: #161625; -fx-padding: 15; -fx-border-color: #2a2a3c; -fx-border-radius: 10; -fx-pref-width: 280;");
 
             Label etiqueta = new Label("EVIDENCIA SIN CLASIFICAR");
-            etiqueta.setStyle("-fx-font-size: 9px; -fx-text-fill: #5a5a7a; -fx-letter-spacing: 0.1em;");
+            etiqueta.setStyle("-fx-font-size: 11px; -fx-text-fill: #5a5a7a; -fx-letter-spacing: 0.1em;");
 
             VBox pistas = new VBox(4);
             for(String evidencia : c.getEvidencias()) {
                 Label p = new Label("• " + evidencia);
-                p.setStyle("-fx-text-fill: #9090b0; -fx-font-size: 10px; -fx-wrap-text: true;");
+                p.setStyle("-fx-text-fill: #9090b0; -fx-font-size: 17px; -fx-wrap-text: true;");
                 p.setWrapText(true);
                 pistas.getChildren().add(p);
             }

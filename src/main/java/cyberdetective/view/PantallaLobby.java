@@ -39,7 +39,7 @@ public class PantallaLobby {
         root.setStyle("-fx-background-color: #0a0a0f;");
 
         Label titulo = new Label(isHosting ? "Crear Nueva Investigación" : "Unirse a Investigación");
-        titulo.setStyle("-fx-font-size: 28px; -fx-text-fill: white; -fx-font-weight: bold;");
+        titulo.setStyle("-fx-font-size: 34px; -fx-text-fill: white; -fx-font-weight: bold;");
 
         VBox form = new VBox(15);
         form.setAlignment(Pos.CENTER);
@@ -72,7 +72,7 @@ public class PantallaLobby {
         btnAccion.setPrefWidth(350);
 
         lblEstado = new Label("Estado: Listo");
-        lblEstado.setStyle("-fx-text-fill: #5a5a7a; -fx-font-size: 13px;");
+        lblEstado.setStyle("-fx-text-fill: #5a5a7a; -fx-font-size: 19px;");
 
         btnAccion.setOnAction(e -> {
             playerName = txtNombre.getText().trim();

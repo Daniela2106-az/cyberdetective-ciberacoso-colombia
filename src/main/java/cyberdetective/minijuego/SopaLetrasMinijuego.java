@@ -130,7 +130,7 @@ public class SopaLetrasMinijuego extends Minijuego {
             // Destacar todas
             for (LetraCasilla c : letrasObjetivo) {
                 c.bg.setFill(Color.web("#00ff88"));
-                c.lbl.setStyle("-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 20px;");
+                c.lbl.setStyle("-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 29px;");
             }
             completar();
         }
