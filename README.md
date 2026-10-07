@@ -25,7 +25,7 @@ Juego educativo de investigación en Java/JavaFX sobre **ciberacoso en Colombia*
 ## Estructura de carpetas
 
 ```
-cyberdetective/
+cyberdetective-ciberacoso-colombia/
 ├── pom.xml                         # Configuración Maven (Java 17, JavaFX 21)
 └── src/main/
     ├── java/cyberdetective/
@@ -52,8 +52,8 @@ cyberdetective/
 ## Cómo usarlo
 
 ```bash
-git clone https://github.com/Daniela2106-az/cyberdetective.git
-cd cyberdetective
+git clone https://github.com/Daniela2106-az/cyberdetective-ciberacoso-colombia.git
+cd cyberdetective-ciberacoso-colombia
 mvn clean javafx:run
 ```
 
