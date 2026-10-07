@@ -1,10 +1,13 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-.kotlin
+# Maven
+target/
+dependency-reduced-pom.xml
 
-### Eclipse ###
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse / NetBeans / VS Code
 .apt_generated
 .classpath
 .factorypath
@@ -13,18 +16,19 @@ out/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
-
-### VS Code ###
 .vscode/
 
-### Mac OS ###
+# macOS
 .DS_Store
+
+# Secretos y entornos
+.env
+*.pem
+*.key
+
+# Logs
+*.log
